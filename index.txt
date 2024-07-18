@@ -2,8 +2,8 @@ vCard - Personal Portfolio
 
 # sidebar
 
-alt = Richard hanrick
-Richard hanrick
+alt = Max Gaudin
+Max Gaudin
 Web developer
 
 Show Contacts
