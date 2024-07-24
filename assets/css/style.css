@@ -131,6 +131,10 @@ li { list-style: none; }
 
 img, ion-icon, a, button, time, span { display: block; }
 
+.about a {
+  display: inline;
+}
+
 button {
   font: inherit;
   background: none;
@@ -155,7 +159,7 @@ input, textarea {
 
 html { font-family: var(--ff-poppins); }
 
-body { background: var(--white-1); }
+body { background: #e5eefd; }
 
 
 
@@ -168,11 +172,15 @@ body { background: var(--white-1); }
 .sidebar,
 article {
   background: var(--white-2);
-  border: 1px solid var(--jet);
+  border: 2px solid var(--jet);
   border-radius: 20px;
   padding: 15px;
   box-shadow: var(--shadow-1);
   z-index: 1;
+}
+
+.sidebar a, article a {
+  text-decoration: underline;
 }
 
 .separator {
@@ -251,7 +259,7 @@ article.active {
   left: 0;
   width: 30px;
   height: 3px;
-  background: var(--text-gradient-yellow);
+  background: var(--smoky-black);
   border-radius: 3px;
 }
 
@@ -464,9 +472,9 @@ main {
   bottom: 0;
   left: 0;
   width: 100%;
-  background: hsla(240, 1%, 17%, 0.75);
+  background: var(--white-1);
   backdrop-filter: blur(10px);
-  border: 1px solid var(--jet);
+  border: 2px solid var(--jet);
   border-radius: 12px 12px 0 0;
   box-shadow: var(--shadow-2);
   z-index: 5;
@@ -481,16 +489,16 @@ main {
 }
 
 .navbar-link {
-  color: var(--light-gray);
+  color: var(--smoky-black);
   font-size: var(--fs-8);
   padding: 20px 7px;
   transition: color var(--transition-1);
 }
 
 .navbar-link:hover,
-.navbar-link:focus { color: var(--light-gray-70); }
+.navbar-link:focus { color: var(--smoky-black); text-decoration: underline; }
 
-.navbar-link.active { color: var(--orange-yellow-crayola); }
+.navbar-link.active { text-decoration: underline; }
 
 
 
@@ -1391,6 +1399,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   .contact-info {
     max-width: calc(100%);
         width: calc(100%);
+        line-height: 1.7;
   }
 
 
@@ -1798,7 +1807,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   body::-webkit-scrollbar { width: 20px; }
 
-  body::-webkit-scrollbar-track { background: var(--smoky-black); }
+  body::-webkit-scrollbar-track { background:#e5eefd; }
 
   body::-webkit-scrollbar-thumb {
     border: 5px solid var(--smoky-black);
